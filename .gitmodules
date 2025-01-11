@@ -1,0 +1,24 @@
+[submodule "crates/monolith-common"]
+	path = crates/monolith-common
+	url = https://github.com/jbirbal-skydom/monolith-common
+[submodule "crates/monolith-gui"]
+	path = crates/monolith-gui
+	url = https://github.com/jbirbal-skydom/monolith-gui
+[submodule "crates/monolith-core"]
+	path = crates/monolith-core
+	url = https://github.com/jbirbal-skydom/monolith-core
+[submodule "crates/monolith-data-process"]
+	path = crates/monolith-data-process
+	url = https://github.com/jbirbal-skydom/monolith-data-process
+[submodule "crates/monolith-generator"]
+	path = crates/monolith-generator
+	url = https://github.com/jbirbal-skydom/monolith-generator
+[submodule "crates/monolith-output"]
+	path = crates/monolith-output
+	url = https://github.com/jbirbal-skydom/monolith-output
+[submodule "crates/monolith-key-mgmt"]
+	path = crates/monolith-key-mgmt
+	url = https://github.com/jbirbal-skydom/monolith-key-mgmt
+[submodule "crates/monolith-transport"]
+	path = crates/monolith-transport
+	url = https://github.com/jbirbal-skydom/monolith-transport
