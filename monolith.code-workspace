@@ -1,0 +1,39 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "crates/monolith-common"
+		},
+		{
+			"path": "crates/monolith-core"
+		},
+		{
+			"path": "crates/monolith-data-process"
+		},
+		{
+			"path": "crates/monolith-generator"
+		},
+		{
+			"path": "crates/monolith-gui"
+		},
+		{
+			"path": "crates/monolith-key-mgmt"
+		},
+		{
+			"path": "crates/monolith-output"
+		},
+		{
+			"path": "crates/monolith-transport"
+		},
+		{
+			"path": "../websites/monolith-docs"
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"uniffi"
+		]
+	}
+}
