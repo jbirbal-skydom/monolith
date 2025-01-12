@@ -33,6 +33,15 @@
 	],
 	"settings": {
 		"cSpell.words": [
+			"armeabi",
+			"armv",
+			"bindgen",
+			"jnilibs",
+			"kotlinx",
+			"ktlint",
+			"libmonolithcore",
+			"monolithcore",
+			"rustup",
 			"uniffi"
 		]
 	}
