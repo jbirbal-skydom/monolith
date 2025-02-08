@@ -1,4 +1,7 @@
+# Monolith
+
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<!-- markdownlint-disable-file MD033 -->
 <a name="readme-top"></a>
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
@@ -7,8 +10,6 @@
 *** Don't forget to give the project a star!
 *** Thanks again! Now go create something AMAZING! :D
 -->
-
-
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -23,34 +24,29 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/jbirbal-skydom/monolith">
+    <img src="images/logo.gif" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+<h3 align="center">Monolith</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Next-generation color barcode system with 50x data density
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/jbirbal-skydom/monolith"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/jbirbal-skydom/monolith">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/jbirbal-skydom/monolith/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/jbirbal-skydom/monolith/issues">Request Feature</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -78,44 +74,31 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://monolith.skydom.ai)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Monolith is revolutionizing how we store and transfer data in the physical world. By leveraging layered hexagonal color patterns, we've created a barcode system that can store up to 50x more data than traditional QR codes while being significantly more resilient to damage.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+Key Features:
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+* 📦 **High Data Density**: Store up to 50x more data than traditional barcodes
+* 🛡️ **Damage Resistant**: Maintains readability even with 30% physical damage
+* 🎨 **Color Innovation**: Uses RGB/CMYK layers for enhanced data capacity
+* 🔄 **Format Flexibility**: Supports text, URLs, binary data, and more
+* 📱 **Universal Scanning**: Works with any RGB/CMYK-capable scanner
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Slint][slint-lang]][Slint-url]
+* [![Rust][rust-lang]][Rust-url]
+* [![C][c-lang]][C-url]
+* [![GCC][gcc-badge]][GCC-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -125,61 +108,144 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+* Rust
+  
   ```sh
-  npm install npm@latest -g
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
   ```
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+1. Clone the repo
+  
+    ```sh
+    git clone https://github.com/jbirbal-skydom/monolith.git
+    cd monolith
+    git submodule init
+    git submodule update
+   ```
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+2. Build the project
+  
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   cargo build --release
    ```
-3. Install NPM packages
+
+3. Run tests
+  
    ```sh
-   npm install
+   cargo test
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+
+### Monolith System Repositories
+
+#### monolith
+
+The main meta-repository that brings together all Monolith components. This repository uses Git submodules to manage the individual components and provides a unified build system for the entire Monolith ecosystem.
+
+* **Purpose**: Project coordination, system-wide documentation, and integrated builds
+* **Dependencies**: All other repositories as submodules
+* **Key Features**: Workspace management, CI/CD pipelines, system-wide testing
+
+#### [monolith-common](https://github.com/jbirbal-skydom/monolith-common)
+
+Shared library containing common utilities, types, and interfaces used across all Monolith components.
+
+* **Purpose**: Code reuse, standardization, and interface definitions
+* **Key Features**: Crypto primitives, common traits, shared types, communication protocols
+* **Used By**: All other Monolith components
+
+#### [monolith-gui](https://github.com/jbirbal-skydom/monolith-gui)
+
+The graphical user interface component for the Monolith system.
+
+* **Purpose**: User interaction and data visualization
+* **Dependencies**: monolith-common
+* **Key Features**: Color pattern visualization, code generation interface, scanning interface
+
+#### [monolith-core](https://github.com/jbirbal-skydom/monolith-core)
+
+Core processing and coordination component of the Monolith system.
+
+* **Purpose**: Central coordination and main business logic
+* **Dependencies**: monolith-common
+* **Key Features**: Request handling, component coordination, main processing pipeline
+
+#### [monolith-data-process](https://github.com/jbirbal-skydom/monolith-data-process)
+
+Data processing and analysis component.
+
+* **Purpose**: Handle data transformation and processing
+* **Dependencies**: monolith-common
+* **Key Features**: Data validation, transformation, pattern recognition
+
+#### [monolith-generator](https://github.com/jbirbal-skydom/monolith-generator)
+
+Code generation and pattern creation component.
+
+* **Purpose**: Generate Monolith codes and patterns
+* **Dependencies**: monolith-common
+* **Key Features**: Pattern generation, code optimization, error correction
+
+#### [monolith-output](https://github.com/jbirbal-skydom/monolith-output)
+
+Output handling and export component.
+
+* **Purpose**: Handle final code output and export
+* **Dependencies**: monolith-common
+* **Key Features**: Output formatting, file export, printing preparation
+
+#### [monolith-key-mgmt](https://github.com/jbirbal-skydom/monolith-key-mgmt)
+
+Security and key management component.
+
+* **Purpose**: Handle all cryptographic operations and key management
+* **Dependencies**: monolith-common
+* **Key Features**: Ephemeral key generation, key distribution, signature verification
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+### Basic Example
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+```rust
+use monolith::encoder;
+
+let data = "Hello, Monolith!";
+let code = encoder::generate(data, Options::default());
+code.save("my_code.png")?;
+```
+
+### Scanning
+
+```rust
+use monolith::decoder;
+
+let code = decoder::scan_from_image("code.png")?;
+println!("Decoded data: {}", code.data());
+```
+
+_For more examples and usage, please refer to the [Documentation](https://docs.monolith.dev)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+* [x] Core encoding/decoding engine
+* [x] Basic RGB/CMYK support
+* [x] Error correction implementation
+* [ ] Mobile SDK
+  * [ ] iOS Framework
+  * [ ] Android Library
+* [ ] Web Components
+* [ ] Enterprise Features
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/jbirbal-skydom/monolith/issues) for a full list of proposed features and known issues.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -197,8 +263,6 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
 ## License
 
@@ -206,65 +270,44 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/jbirbal-skydom/monolith](https://github.com/jbirbal-skydom/monolith)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [OpenCV Community](https://opencv.org/)
+* [Rust Community](https://www.rust-lang.org/)
+* [All Contributors](https://github.com/yourusername/monolith/contributors)
+* [Sponsors](https://docs.monolith.skydom.ai/docs/resources/sponsorship)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[contributors-shield]: https://img.shields.io/github/contributors/jbirbal-skydom/monolith.svg?style=for-the-badge
+[contributors-url]: https://github.com/jbirbal-skydom/monolith/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/jbirbal-skydom/monolith.svg?style=for-the-badge
+[forks-url]: https://github.com/jbirbal-skydom/monolith/network/members
+[stars-shield]: https://img.shields.io/github/stars/jbirbal-skydom/monolith.svg?style=for-the-badge
+[stars-url]: https://github.com/jbirbal-skydom/monolith/stargazers
+[issues-shield]: https://img.shields.io/github/issues/jbirbal-skydom/monolith.svg?style=for-the-badge
+[issues-url]: https://github.com/jbirbal-skydom/monolith/issues
+[license-shield]: https://img.shields.io/github/license/jbirbal-skydom/monolith.svg?style=for-the-badge
+[license-url]: https://github.com/jbirbal-skydom/monolith/blob/master/LICENSE.txt
 [product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+
+ <!-- Badge  -->
+
+[rust-lang]: https://img.shields.io/badge/Rust-f74c00?style=for-the-badge&logo=rust&logoColor=white
+[Rust-url]: https://www.rust-lang.org/
+[c-lang]: https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white
+[C-url]: "https://en.wikipedia.org/wiki/C_(programming_language)"
+[slint-lang]: https://img.shields.io/badge/Slint-7F52FF?style=for-the-badge&logo=slint&logoColor=white
+[Slint-url]: https://slint-ui.com/
+[gcc-badge]: https://img.shields.io/badge/GCC-4E9A06?style=for-the-badge&logo=gnu&logoColor=white
+[GCC-url]: https://gcc.gnu.org/

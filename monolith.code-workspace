@@ -35,13 +35,18 @@
 		"cSpell.words": [
 			"armeabi",
 			"armv",
+			"barcodes",
 			"bindgen",
+			"CMYK",
 			"jnilibs",
 			"kotlinx",
 			"ktlint",
 			"libmonolithcore",
+			"mgmt",
 			"monolithcore",
+			"println",
 			"rustup",
+			"tlsv",
 			"uniffi"
 		]
 	}
