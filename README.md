@@ -139,6 +139,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Monolith System Repositories
 
+**Why multi-binary approach**
+ I chose a multi-binary approach split into distinct security domains. This decision stems from several security and operational considerations. By separating the system into multiple binaries, we create natural security boundaries between different components, following the principle of least privilege. The core cryptographic operations can run in a separate process from the networking stack, and the audit logging system can operate independently.
+
 #### monolith
 
 The main meta-repository that brings together all Monolith components. This repository uses Git submodules to manage the individual components and provides a unified build system for the entire Monolith ecosystem.
