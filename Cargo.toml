@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "crates/monolith-core",
+    "crates/monolith-common"
+, "crates/monolith-data-process", "crates/monolith-generator", "crates/monolith-output", "crates/monolith-key-mgmt"]
+
+resolver = "2"
