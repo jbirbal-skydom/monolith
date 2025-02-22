@@ -1,0 +1,51 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Test monolith-core",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=monolith-core"
+                ]
+            },
+            "args": [],
+            "initCommands": [
+                "command script import ${workspaceFolder}/.vscode/rust_lldb_pretty.py"
+            ]
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Test monolith-common",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=monolith-common"
+                ]
+            },
+            "args": []
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Test monolith-data-process",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=monolith-data-process"
+                ]
+            },
+            "args": []
+        }
+        // Add similar configurations for other crates
+    ]
+}
